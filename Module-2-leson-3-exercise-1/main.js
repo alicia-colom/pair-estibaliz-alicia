@@ -8,8 +8,7 @@ let userAvatar = "http://www.fillmurray.com/300/300";
 // Alicia-No consigo hallar solución a este ejercicio. He probado todas las maneras que se me han ocurrido y no logro resolvelo (aquí solo hay unas poquitas)
 
 console.log;
-userAvatar.setAttribute = "http://www.fillmurray.com/300/300";
-
+userAvatar.import {Image} from "http://www.fillmurray.com/300/300";
 // userAvatar = document.images[userAvatar]."src";
 
 // userAvatar.setAttribute("http://www.fillmurray.com/300/300");
