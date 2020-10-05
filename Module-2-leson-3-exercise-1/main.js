@@ -4,12 +4,15 @@
 const DEFAULT_AVATAR = "http://placehold.it/300x300";
 // avatar que eligió el usuario al registrarse
 let userAvatar = "http://www.fillmurray.com/300/300";
+let img = "http://www.fillmurray.com/300/300";
 
-// Alicia-No consigo hallar solución a este ejercicio. He probado todas las maneras que se me han ocurrido y no logro resolvelo (aquí solo hay unas poquitas)
+imgElement.setAttribute("src =http://www.fillmurray.com/300/300", userAvatar);
 
-console.log;
-userAvatar.import {Image} from "http://www.fillmurray.com/300/300";
-// userAvatar = document.images[userAvatar]."src";
+// // Alicia-No consigo hallar solución a este ejercicio. He probado todas las maneras que se me han ocurrido y no logro resolvelo (aquí solo hay unas poquitas)
+
+// console.log;
+// userAvatar.import {Image} from "http://www.fillmurray.com/300/300";
+// // userAvatar = document.images[userAvatar]."src";
 
 // userAvatar.setAttribute("http://www.fillmurray.com/300/300");
 
