@@ -18,6 +18,11 @@ const adalaber1 = {
 let text = document.querySelector(".js-text");
 text.innerHTML = `Mi nombre es ${adalaber1.name} , tengo ${adalaber1.age} años y ${adalaber1.activity.work} estoy ${adalaber1.activity}`;
 
+
+
+
+
+
 // // parte 2
 // const adalaber2 = {
 //   surname: "Lovelace",
