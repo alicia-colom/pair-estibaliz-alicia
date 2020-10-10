@@ -6,19 +6,16 @@ const adalaber1 = {
   name: "Susana",
   age: 34,
   // objeto dentro de objeto
-
-
   activity: {
+    work: "si",
+    job: "periodista",
     // dentro de una función
-    const job = "perdidista"
-   if (job.length = 0) {
+   if (work = "no") {
      return "estoy en paro";
-
-    } else {
-      return job
-// literal: no tiene trabajo
+    } else (work !=)){
+      return job;
     }
-  },
+  }
 };
 let text = document.querySelector(".js-text");
 text.innerHTML = `Mi nombre es ${adalaber1.name} , tengo ${adalaber1.age} años y ${adalaber1.activity.work} estoy ${adalaber1.activity.job}`;

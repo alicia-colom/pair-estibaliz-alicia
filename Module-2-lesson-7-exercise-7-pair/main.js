@@ -29,7 +29,9 @@ console.log(adalabers);
 
 //Creamos una nueva adalaber y la añadimos al array
 const adalaber4 = new plantillaAdalaber("Rocío", 25, "actriz");
+const adalaber5 = new plantillaAdalaber("Inmaculada", 21, "diseñadora");
 adalabers[3] = adalaber4;
+adalabers[4] = adalaber5;
 //Comprobamos en consola que el array está correcto.
 console.log(adalabers);
 
@@ -38,5 +40,27 @@ console.log(adalabers);
 function countAdalabersFunc() {
 	console.log(adalabers.length);
 }
-
+countAdalabersFunc();
 /* const countAdalabers */
+
+// Segunda estadística : y así podemos listar:
+	for (let position = 0; position < adalabers.length ;position++){
+		const agesAdalabers = adalabers[position].age;
+		console.log (agesAdalabers);
+		// const result = agesAdalabers / adalabers.length;
+		// console.log(result);
+	}
+
+	/*for of para recorrer los valores de los objetos del array, y podemos usarlo para sumar los valores*/
+
+// let prueba = 0;
+// for (const listAdalabers of adalabers) {
+// 	prueba = prueba + listAdalabers;
+// 	console.log (prueba);
+// }
+
+
+// averageAge ();
+// console.log (`${averageAge()} `);
+//  adalaber1.age 
+// console.log ((adalaber1.age + adalaber2.age + adalaber3.age + adalaber4.age + adalaber5.age) / adalabers.length);
