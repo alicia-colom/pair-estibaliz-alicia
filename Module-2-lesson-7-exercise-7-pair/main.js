@@ -43,24 +43,44 @@ function countAdalabersFunc() {
 countAdalabersFunc();
 /* const countAdalabers */
 
-// Segunda estadística : y así podemos listar:
-	for (let position = 0; position < adalabers.length ;position++){
-		const agesAdalabers = adalabers[position].age;
-		console.log (agesAdalabers);
-		// const result = agesAdalabers / adalabers.length;
-		// console.log(result);
+// Segunda estadística :
+
+/* let agesAdalabers = 0;  
+// No podemos definir la variable agesAdalabers fuera de la función, pq el valor con el que entraría en la función sería el valor con el que salió del for (por ej. la 1º vez es 140, Y entraríamos la 2º vez en la función con la agesAdalabers=140 en lugar de 0)  */
+
+function averageAge() {
+	let agesAdalabers = 0;
+	for (let position = 0; position < adalabers.length; position++) {
+		agesAdalabers = agesAdalabers + adalabers[position].age;
+		console.log(agesAdalabers); // imprime las 5 edades
 	}
+	console.log("Suma de todas las edades usando for clásico: " + agesAdalabers);
+	return agesAdalabers / adalabers.length;
+}
 
-	/*for of para recorrer los valores de los objetos del array, y podemos usarlo para sumar los valores*/
+console.log("Media de todas las edades usando for clásico: " + averageAge());
 
-// let prueba = 0;
-// for (const listAdalabers of adalabers) {
-// 	prueba = prueba + listAdalabers;
-// 	console.log (prueba);
-// }
+/*for of para recorrer los valores de los objetos del array, y podemos usarlo para sumar los valores*/
 
+function averageAgeForOf() {
+	let agesAdalabers = 0;
+	for (const oneAdalaber of adalabers) {
+		//	for (const oneAdalaber = adalabers[position] of adalabers) {
+		agesAdalabers = agesAdalabers + oneAdalaber.age;
+		console.log(agesAdalabers);
+	}
+	console.log("Suma de todas las edades usando for of: " + agesAdalabers);
+	return agesAdalabers / adalabers.length;
+}
 
-// averageAge ();
+console.log("Media de todas las edades usando for of: " + averageAgeForOf());
+
+//Pruebo a añadir un nuevo objeto a nuestro array, para comprobar que vuelve a hacer el cálculo de la media de edades incluyendo este nuevo valor.
+const adalaber6 = new plantillaAdalaber("Rita", 100, "flamenca");
+adalabers[5] = adalaber6;
+console.log(averageAge());
+//FUNCIONA!!!
+
 // console.log (`${averageAge()} `);
-//  adalaber1.age 
+//  adalaber1.age
 // console.log ((adalaber1.age + adalaber2.age + adalaber3.age + adalaber4.age + adalaber5.age) / adalabers.length);

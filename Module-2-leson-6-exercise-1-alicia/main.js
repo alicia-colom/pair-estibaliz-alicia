@@ -1,22 +1,26 @@
 "use strict";
 // Ejericicio 1
 // objeto : bloque de código dentro de una variable.
+
+
+const prueba, function employ() { //aquí tengo un problema en la declaración de la función, o en convertirla en constante ¿?
+	if (job.length = 0) {
+		return "estoy en paro.";
+	} else {
+		return "soy " + job + ".";
+	}
+};
+
 const adalaber1 = {
 	// Propiedades> clave:valor,
 	name: "Susana",
 	age: 34,
 	// objeto dentro de objeto
 	job: "periodista",
-	activity: function () {
-		if ((job.length = 0)) {
-			return "estoy en paro";
-		} else {
-			return job;
-		}
-	},
+	activity: prueba.addEventListener("mouseover", employ),
 };
 let text = document.querySelector(".js-text");
-text.innerHTML = `Mi nombre es ${adalaber1.name} , tengo ${adalaber1.age} años y ${adalaber1.activity.work} estoy ${adalaber1.activity}`;
+text.innerHTML = `Mi nombre es ${adalaber1.name} , tengo ${adalaber1.age} años y ${adalaber1.activity}`;
 
 
 
